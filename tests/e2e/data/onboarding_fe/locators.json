@@ -1,0 +1,139 @@
+{
+  "navigation": {
+    "CONTINUE_BUTTON": "[data-im='cta-continue']"
+  },
+  "pre_app": {
+    "existing": {
+      "buttons": {
+        "EXISTING": "[data-im='apply-existing-customer']",
+        "NEW": "[data-im='apply-new-customer']"
+      }
+    }
+  },
+  "properties": {
+    "property_intent": {
+      "intent": {
+        "REFINANCE": "//label[contains(@for,'Refinance')]",
+        "PURCHASE": "//label[contains(@for,'Purchase')]"
+      },
+      "use": {
+        "HOME": "[data-im='My Home']",
+        "INVESTMENT": "[data-im='Investment']"
+      }
+    },
+    "property_address": {
+      "ADDRESS_INPUT": "[data-im='autocomplete-search'] input",
+      "DROPDOWN_LIST": ".vs__dropdown-option",
+      "MANUAL_ADDRESS_BTN": "ul button",
+      "manual_address_form": {
+        "UNIT_NUMBER_INPUT": "[label='Unit number'] input",
+        "STREET_NUMBER_INPUT": "[label='Street number'] input",
+        "STREET_NAME_INPUT": "[label='Street name'] input",
+        "STREET_TYPE_ITEMS": "//span[@label='Street type']",
+        "STREET_TYPE_DROPDOWN": "[label='Street type'] .v-select__selections",
+        "STREET_TYPE_LIST": ".v-menu__content .v-list-item .v-list-item__title",
+        "SUBURB_INPUT": "[label='Suburb'] input",
+        "STATE_DROPDOWN": "[label='State'] .v-select__selections",
+        "STATE_LIST": ".menuable__content__active .v-list-item .v-list-item__title",
+        "POSTCODE_INPUT": "[label='Postcode'] input"
+      },
+      "MANUAL_ADDRESS_SAVE_CANCEL_BTNS": "[data-im='create-properties-address-input'] button"
+    },
+    "property_about": {
+      "ESTIMATE_INPUT": "[data-im='create-properties-user_estimate-input'] input",
+      "OWNERSHIP": "[data-im='create-properties-owned_by-input'] .radio-wrapper .radio-item"
+    },
+    "property_current_loan": {
+      "CURRENT_INPUT": "[data-im='create-properties-current_loan_amount-input'] input",
+      "CURRENT_RATE_INPUT": "[data-im='create-properties-current_loan_rate-input'] input"
+    }
+  },
+  "loans": {
+    "LOAN_FEATURES_OPTIONS": "[data-im='create-loans-refinance_reason-input'] .ph-flex-col",
+    "SAVE_CHANGE_BTN": "[data-im='create-loans-section1-next-btn']"
+  },
+  "personal_details": {
+    "personal_details": {      
+      "NO_MIDDLE_NAME_CHECKBOX": "[data-im='applicant-details-no_middle_name-input'] label .ph-checkbox-toggle",
+      "DOB_INPUT": "[data-im='applicant-details-dob-input'] input",
+      "DRIVER_LICENSE": "[data-im='applicant-details-drivers_license_supplied-input'] .radio-wrapper .radio-item",
+      "ERROR_AGE": "//div[contains(text(), 'required to be between the age of 18 and 85')]"
+    },
+    "contact_details": {
+      "HOME_ADDRESS_CHECKBOX": "[data-im='applicant-details-refinancingCurrentResidence-input'] label .ph-checkbox-toggle"
+    }, 
+    "household_finances": {
+      "APPLY_ON": "[data-im='applicant-details-joint_single-input'] .radio-wrapper .radio-item",
+      "DEPENDENT_NUMBER": "[data-im='applicant-details-dependents-input'] input"
+    },
+    "tax_info": {
+      "TAX_RESIDENT_CHECKBOX": "[data-im='applicant-details-tax_declaration_signed-input'] label .ph-checkbox-toggle"
+    },
+    "employment": {
+      "EMPLOYMENT_BTN": "[data-im='add-employment-status-input'] .radio-wrapper .radio-item",
+      "INDUSTRY_INPUT": "[data-im='add-employment-industry-input'] input",
+      "INDUSTRY_DROPDOWN": "ul.vs__dropdown-menu .vs__dropdown-option",
+      "EMPLOYER_NAME_INPUT": "[data-im='add-employment-employer_name-input'] input",
+      "EMPLOYMENT_LENGTH_INPUT": "[data-im='add-employment-employment_length-input'] input",
+      "EMPLOYMENT_LENGTH_DROPDOWN": "ul.vs__dropdown-menu .vs__dropdown-option"
+    },
+    "income": {
+      "BASE_SALARY_INPUT": "[data-im='add-employment-declared_base_salary-input'] input",
+      "INCLUDES_SUPER": "[data-im='add-employment-declared_includes_super-input'] .radio-wrapper .radio-item",
+      "INCOME_REDUCED": "[data-im='add-employment-has_income_reduced-input'] .radio-wrapper .radio-item",
+      "INCOME_REDUCED_VALUE": "[data-im='add-employment-income_reduction-input'] .radio-wrapper .radio-item",
+      "INCOME_MAY_CHANGE": "[data-im='add-employment-income_may_change-input'] .radio-wrapper .radio-item",
+      "INCOME_CHANGE_REASON": "[data-im='add-employment-income_change_reason-input'] input",
+      "CAR_ALLOWANCE": "[data-im='add-employment-hasAdditionalIncome-input'] .radio-wrapper .radio-item",
+      "CAR_ALLOWANCE_AMOUNT_INPUT": "[data-im='add-employment-Car allowance_amount-input'] input",
+      "CAR_ALLOWANCE_FREQUENCY_INPUT": "[data-im='add-employment-Car allowance_frequency-input'] input",
+      "CAR_ALLOWANCE_FREQUENCY_DROPDOWN": "ul.vs__dropdown-menu .vs__dropdown-option",
+      "REGULAR_ALLOWANCE_AMOUNT_INPUT": "[data-im='add-employment-Regular overtime/shift allowance_amount-input'] input",
+      "REGULAR_ALLOWANCE_FREQUENCY_INPUT": "[data-im='add-employment-Regular overtime/shift allowance_frequency-input'] input",
+      "REGULAR_ALLOWANCE_FREQUENCY_DROPDOWN": "ul.vs__dropdown-menu .vs__dropdown-option"
+    }
+  },
+  "finances": {
+    "add_bank": {
+      "BANK_INPUT": "[data-im='instituion-form-list'] input",
+      "BANK_DROPDOWN": "ul li.vs__dropdown-option",
+      "BANK_USERNAME_INPUT": "[data-im='institution-form-login-username'] input",
+      "BANK_PASSWORD_INPUT": "[data-im='institution-form-login-password'] input",
+      "BANK_SUBMIT_BTN": "[data-im='institution-form-login-submit']",
+      "NANO_BANK_STATUS": "//div[contains(@class,'flushed-content-wrap')][1]//span",
+      "ADD_BANK_BTN": "//div[@size='small']/button",
+      "NANO_NEED_HELP_BTN": "//button[contains(@class, 'ph-border-none')]",
+      "SIDE_PANEL_GOT_IT_BTN":"//button[contains(@class,'tw-mt-4')]"
+    },
+    "account_details": {
+      "NANO_ACCOUNT":"//div[contains(@class,'radius-top-right-7')]/div[2]//div[@class='font-weight-bold text-16']"
+    },
+    "loans_liabilities": {
+      "SELECTION_BTN": ".liabilities button",
+      "SELECTION_DROPDOWN": ".v-select__selections",
+      "BANK_LIST": ".v-menu__content .v-list-item .v-list-item__title",
+      "BANK_BALANCE_INPUT": "[data-im='add-loans-add-liabilities-bank-balance'] input",
+      "CREDIT_LIMIT_INPUT": "[data-im='add-loans-add-liabilities-bank-credit-limit'] input",
+      "BANK_SUBMIT_BTN": "[data-im='add-loans-add-liabilities-liability-bank-submit']",
+      "LIABILITY_SAVE_BTN": "div=Save",
+      "LOAN_ACCOUNT_SELECTED": "//div[contains(@data-im,'-liabilities-')]"
+    }
+  },
+  "auth": {
+    "sign_in": {
+      "MOBILE_INPUT": "[data-im='sign-in-phone-input'] .input-tel input",
+      "SIGN_IN_BTN": ""
+    }
+  },
+  "existingUserLogin":{
+    "MobileNumberInput": "//*[@data-im='customer-login-phone-input'] //div[contains(@class,'input-tel')] //input",
+    "logInContinueBtn": "//*[@data-im='customer-login-cta-button']",
+    "existingOtpInput":"//*[@data-im='customer-login-otp-otp'] | //*[@data-im='sign-in-otp-otp']",
+    "existingOtpContinueBtn": "//*[@data-im='customer-login-otp-continue-button'] | //*[@data-im='sign-in-otp-continue-button']"
+  },
+  "dashboard":{
+    "getActiveApps": "//div[contains(@data-im,'auth-dashboard-property-card')]",
+    "nanoHomeIcon": "//div[@class='rounded-circle animate-fade-in']//*[name()='svg']",
+    "deleteApplication": "//*[name() = 'svg' and @width='32' and @height='32']"
+  }
+}

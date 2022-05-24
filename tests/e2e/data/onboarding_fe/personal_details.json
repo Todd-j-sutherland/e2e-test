@@ -1,0 +1,28 @@
+{
+    "personal_details":{
+        "DOB":[
+            "01",
+            "01",
+            "1990"
+        ],
+        "driver_license":"No",
+        "no_middle_name":true
+    },
+    "contact_details":{
+        "homeAddress":true
+
+    },
+    "household_finances":{
+        "apply_on":"On my own",
+        "dependent_number":0
+    },
+    "tax_info":{
+        "tax_resident":true
+    },
+    "employment":{
+        "employment":"Full Time PAYG",
+        "industry": "Mining",
+        "employer_name": "Employer Pty Ltd"
+    }
+
+  }

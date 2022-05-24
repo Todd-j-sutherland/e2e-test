@@ -1,0 +1,240 @@
+{
+  "scenario_OB_TC101": {
+    "property": {
+      "property_intent": "Refinance",
+      "property_use": "Investment",
+      "property_address": "8 Tristan Avenue, WOONONA NSW 2517",
+      "property_estimated_value": "1000000",
+      "property_ownership": "Me",
+      "property_outstanding_loan": "500000",
+      "property_current_interest_rate": "3.2",
+      "property_cascading_form_sections": {
+        "section_1": "YOUR INTENT",
+        "section_2": "PROPERTY ADDRESS",
+        "section_3": "ABOUT YOUR PROPERTY",
+        "section_4": "CURRENT LOANS ON THIS PROPERTY"
+      },
+      "property_exclusion": false
+    },
+    "personal_details": {
+      "existing": false,
+      "licence": {
+        "DOB": ["01", "01", "1990"],
+        "driver_license": "No",
+        "no_middle_name": true
+      },
+      "contact_details": {
+        "homeAddress": true
+      },
+      "household_finances": {
+        "apply_on": "On my own",
+        "dependent_number": 0
+      },
+      "tax_info": {
+        "tax_resident": true
+      },
+      "employment": {
+        "employment": "Full Time PAYG",
+        "industry": "Mining",
+        "employer_name": "Employer Pty Ltd"
+      },
+      "loan": {
+        "loan_requested": "500000",
+        "loan_features": "A competitive variable rate"
+      }
+    }
+  },
+  "scenario_OB_TC202": {
+    "property": {
+      "property_intent": "Refinance",
+      "property_use": "Investment",
+      "property_address": "29 Gurley Street, GURLEY NSW 2398",
+      "property_estimated_value": "1000000",
+      "property_ownership": "Me",
+      "property_outstanding_loan": "500000",
+      "property_current_interest_rate": "3.2",
+      "property_cascading_form_sections": {
+        "section_1": "01. YOUR INTENT",
+        "section_2": "02. PROPERTY ADDRESS",
+        "section_3": "03. ABOUT YOUR PROPERTY",
+        "section_4": "04. CURRENT LOANS ON THIS PROPERTY"
+      },
+      "property_exclusion": true,
+      "manualAddress": {
+        "postcode": "2398",
+        "unitNo": "",
+        "streetNo": "29",
+        "streetName": "Gurley",
+        "streetType": "Street",
+        "suburb": "GURLEY",
+        "state": "NSW"
+      }
+    },
+    "personal_details": {
+      "licence": {
+        "DOB": ["01", "01", "1990"],
+        "driver_license": "No",
+        "no_middle_name": true
+      },
+      "contact_details": {
+        "homeAddress": true
+      },
+      "household_finances": {
+        "apply_on": "On my own",
+        "dependent_number": 0
+      },
+      "tax_info": {
+        "tax_resident": true
+      },
+      "employment": {
+        "employment": "Full Time PAYG",
+        "industry": "Mining",
+        "employer_name": "Employer Pty Ltd"
+      },
+      "loan": {
+        "loan_requested": "500000",
+        "loan_features": "A competitive variable rate"
+      }
+    }
+  },
+  "scenario_OB_TC205": {
+    "property": {
+      "property_intent": "Refinance",
+      "property_use": "Investment",
+      "property_address": "7 Nugent Street, PRESTON VIC 3072",
+      "property_estimated_value": "1000000",
+      "property_ownership": "Me",
+      "property_outstanding_loan": "500000",
+      "property_current_interest_rate": "3.2",
+      "property_cascading_form_sections": {
+        "section_1": "YOUR INTENT",
+        "section_2": "PROPERTY ADDRESS",
+        "section_3": "ABOUT YOUR PROPERTY",
+        "section_4": "CURRENT LOANS ON THIS PROPERTY"
+      },
+      "property_exclusion": false
+    },
+    "personal_details": {
+      "licence": {
+        "DOB": ["01", "01", "1990"],
+        "driver_license": "No",
+        "no_middle_name": true
+      },
+      "contact_details": {
+        "homeAddress": true
+      },
+      "household_finances": {
+        "apply_on": "On my own",
+        "dependent_number": 0
+      },
+      "tax_info": {
+        "tax_resident": true
+      },
+      "employment": {
+        "employment": "Full Time PAYG",
+        "industry": "Mining",
+        "employer_name": "Employer Pty Ltd"
+      },
+      "loan": {
+        "loan_requested": "500000",
+        "loan_features": "A competitive variable rate"
+      }
+    }
+  },
+  "scenario_OB_TC206": {
+    "property": {
+      "property_intent": "Refinance",
+      "property_use": "Investment",
+      "property_address": "8 Tristan Avenue, WOONONA NSW 2517",
+      "property_estimated_value": "1000000",
+      "property_ownership": "Me",
+      "property_outstanding_loan": "900000",
+      "property_current_interest_rate": "3.2",
+      "property_cascading_form_sections": {
+        "section_1": "YOUR INTENT",
+        "section_2": "PROPERTY ADDRESS",
+        "section_3": "ABOUT YOUR PROPERTY",
+        "section_4": "CURRENT LOANS ON THIS PROPERTY"
+      },
+      "property_exclusion": false
+    },
+    "personal_details": {
+      "licence": {
+        "DOB": ["01", "01", "1990"],
+        "driver_license": "No",
+        "no_middle_name": true
+      },
+      "contact_details": {
+        "homeAddress": true
+      },
+      "household_finances": {
+        "apply_on": "On my own",
+        "dependent_number": 0
+      },
+      "tax_info": {
+        "tax_resident": true
+      },
+      "employment": {
+        "employment": "Full Time PAYG",
+        "industry": "Mining",
+        "employer_name": "Employer Pty Ltd"
+      },
+      "loan": {
+        "loan_requested": "900000",
+        "loan_features": "A competitive variable rate"
+      }
+    }
+  },
+  "scenario_OB_TC501": {
+    "property": {
+      "property_intent": "Refinance",
+      "property_use": "Investment",
+      "property_address": "8 Tristan Avenue, WOONONA NSW 2517",
+      "property_estimated_value": "1000000",
+      "property_ownership": "Me and My Plus One",
+      "property_outstanding_loan": "500000",
+      "property_current_interest_rate": "3.2",
+      "property_cascading_form_sections": {
+        "section_1": "YOUR INTENT",
+        "section_2": "PROPERTY ADDRESS",
+        "section_3": "ABOUT YOUR PROPERTY",
+        "section_4": "CURRENT LOANS ON THIS PROPERTY"
+      },
+      "property_exclusion": false
+    },
+    "personal_details": {
+      "licence": {
+        "DOB": ["01", "01", "1990"],
+        "driver_license": "No",
+        "no_middle_name": true
+      },
+      "contact_details": {
+        "homeAddress": true
+      },
+      "household_finances": {
+        "apply_on": "With my Plus One",
+        "dependent_number": 0
+      },
+      "tax_info": {
+        "tax_resident": true
+      },
+      "employment": {
+        "employment": "Full Time PAYG",
+        "industry": "Mining",
+        "employer_name": "Employer Pty Ltd"
+      },
+      "loan": {
+        "loan_requested": "900000",
+        "loan_features": "A competitive variable rate"
+      },
+      "joint_app": {
+        "contact_details": {
+          "email": "automationJoint@zeze.com",
+          "number": "(07) 0432 4327",
+          "first_name": "AutomationJoint",
+          "last_name": "AutomationLast"
+        }
+      }
+    }
+  }
+}

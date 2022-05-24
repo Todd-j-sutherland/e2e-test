@@ -1,0 +1,21 @@
+# action.yml
+name: 'E2E Test for onboarding Web'
+description: 'Run e2e Tests for our clients'
+inputs:
+  partner:  # id of partner
+    description: 'name of our partner'
+    required: true
+    default: 'nano'
+  environments:  # id of partner
+    description: 'name of environments'
+    required: true
+    default: 'develop'
+outputs:
+  result: # id of output
+    description: 'determine if tests where successful or failed'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.partner }}
+    - ${{ inputs.environments }}

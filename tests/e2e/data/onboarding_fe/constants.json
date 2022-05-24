@@ -1,0 +1,7 @@
+{
+    "EMPLOYMENT_LIST": ["Full Time PAYG", "Part Time PAYG", "Not Employed", "Self Employed"],
+    "Employment_full_time": "Full Time PAYG",
+    "Employment_part_time": "Full Time PAYG",
+    "Employment_not_employed": "Not Employed",
+    "Employment_self_employed": "Self Employed"
+}
