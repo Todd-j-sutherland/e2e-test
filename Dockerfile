@@ -15,4 +15,4 @@ ADD . /e2e-test
 
 RUN npm install
 
-CMD npm run test:e2e 
+# CMD npm run test:e2e 
