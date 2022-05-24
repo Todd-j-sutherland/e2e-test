@@ -10,6 +10,6 @@ jobs:
         uses: Todd-j-sutherland/e2e-test@v3
         with:
           who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
+      # Use the output from the `hello` step test
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
