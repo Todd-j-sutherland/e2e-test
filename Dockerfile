@@ -7,8 +7,8 @@
 
 # ENTRYPOINT ["/entrypoint.sh"]
 
-# FROM ianwalter/puppeteer:latest
-FROM node:16.13.1
+FROM ianwalter/puppeteer:latest
+# FROM node:16.13.1
 # RUN apt update && apt install default-jdk -y
 WORKDIR /e2e-test
 COPY . /e2e-test
