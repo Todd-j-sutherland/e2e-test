@@ -7,10 +7,11 @@
 
 # ENTRYPOINT ["/entrypoint.sh"]
 
-FROM ianwalter/puppeteer:latest
+# FROM ianwalter/puppeteer:latest
+FROM node:16.13.1
 RUN apt update && apt install default-jdk -y
-WORKDIR /onboarding-web
-ADD . /onboarding-web
+# WORKDIR /onboarding-web
+ADD . /e2e-test
 
 RUN npm install
 
