@@ -13,6 +13,6 @@ RUN apt update && apt install default-jdk -y
 # WORKDIR /onboarding-web
 ADD . /e2e-test
 
-# RUN npm install
+RUN npm install
 
 # CMD npm run test:e2e 
