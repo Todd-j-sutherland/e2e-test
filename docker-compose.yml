@@ -25,7 +25,7 @@ services:
   automation:
     image: automation-test:latest
     container_name: automationtest
-    build: .
+    build: ./e2e-test
     shm_size: 2gb
     depends_on:
       - selenium-hub
