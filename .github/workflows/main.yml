@@ -1,20 +1,20 @@
-on: [push]
+# on: [push]
 
-jobs:
-  hello_world_job:
-    runs-on: ubuntu-latest
-    name: A job to say hello
-    steps:
-      - name: Checkout  
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Hello world action step
-        id: hello
-        uses: Todd-j-sutherland/e2e-test@test_v1.1
-        with:
-          who-to-greet: 'Mona the Octocat'
+# jobs:
+#   hello_world_job:
+#     runs-on: ubuntu-latest
+#     name: A job to say hello
+#     steps:
+#       - name: Checkout  
+#         uses: actions/checkout@v2
+#         with:
+#           fetch-depth: 0
+#       - name: Hello world action step
+#         id: hello
+#         uses: Todd-j-sutherland/e2e-test@test_v1.1
+#         with:
+#           who-to-greet: 'Mona the Octocat'
           
-      # Use the output from the `hello` step test
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+#       # Use the output from the `hello` step test
+#       - name: Get the output time
+#         run: echo "The time was ${{ steps.hello.outputs.time }}"
