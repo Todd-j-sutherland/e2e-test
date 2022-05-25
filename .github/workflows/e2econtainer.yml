@@ -3,11 +3,11 @@
 
 name: WebDriverIO CI
 
-on:
-  push:
-    branches: [ m/wdio-docker ]
-  pull_request:
-    branches: [ main ]
+# on:
+  # push:
+  #   branches: [ m/wdio-docker ]
+  # pull_request:
+  #   branches: [ main ]
 
 jobs:
   e2e_regression:
