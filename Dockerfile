@@ -27,14 +27,15 @@ RUN apt update && apt install default-jdk -y
 COPY entrypoint.sh /entrypoint.sh
 # COPY package.json .
 RUN npm install
-CMD npm run test
+CMD npx wdio tests/e2e/config/wdio.develop.conf.ts --cucumberOpts.tagExpression='@ob_fe_sanity'
 # RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 # FROM ianwalter/puppeteer:latest
+# RUN apt update && apt install default-jdk -y
 # WORKDIR /e2e-test
 # ADD . /e2e-test
 
 # RUN npm install
 
-# CMD npm run test
+# CMD npx wdio tests/e2e/config/wdio.develop.conf.ts --cucumberOpts.tagExpression='@ob_fe_sanity'
