@@ -1,4 +1,5 @@
 #!/bin/sh -l
+echo ls 
 npm install
 echo "Hello------------------- $1 -----------------------------"
 time=$(date)
