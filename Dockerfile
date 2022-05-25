@@ -24,7 +24,7 @@
 FROM ianwalter/puppeteer:latest
 # FROM node:16.13.1
 # WORKDIR /e2e-test
-COPY . /e2e-test
+# COPY . /e2e-test
 COPY entrypoint.sh /entrypoint.sh
 RUN apt update && apt install default-jdk -y
 # COPY package.json .
