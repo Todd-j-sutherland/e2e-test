@@ -1,9 +1,9 @@
 //@ts-nocheck
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import allure from "@wdio/allure-reporter";
-import fs from "fs";
+// import fs from "fs";
 
-dotenv.config();
+// dotenv.config();
 const drivers = {
   chrome: "latest",
 };
@@ -237,11 +237,11 @@ export const config: WebdriverIO.Config = {
    * @param {Object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  onPrepare: function(config, capabilities) {
-    if (process.env.RUNNER === "LOCAL" && fs.existsSync("./allure-results")) {
-      fs.rmdirSync("./allure-results", { recursive: true });
-    }
-  },
+  // onPrepare: function(config, capabilities) {
+  //   if (process.env.RUNNER === "LOCAL" && fs.existsSync("./allure-results")) {
+  //     fs.rmdirSync("./allure-results", { recursive: true });
+  //   }
+  // },
   /**
    * Gets executed before a worker process is spawned and can be used to initialise specific service
    * for that worker as well as modify runtime environments in an async fashion.
