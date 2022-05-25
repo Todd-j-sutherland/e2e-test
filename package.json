@@ -3,17 +3,8 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
-    "serve": "npm start",
-    "s": "npm start",
-    "fresh": "rm -rf ./node_modules && npm i && npm run serve",
-    "start": "vue-cli-service serve",
-    "build": "[ -z \"$CI\" ] && vue-cli-service build || echo \"CI: No build\"",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-    "heroku-prebuild": "node ./scripts/version.js",
     "test": "npm run test:unit && npm run lint",
     "test:unit:watch": "vue-cli-service test:unit --watch",
-    "prepare": "husky install",
     "env-map-check": "npm run test:unit .github/test/index.spec.js",
     "test:e2e": "npx wdio tests/e2e/config/wdio.develop.conf.ts --cucumberOpts.tagExpression='@ob_fe_sanity'",
     "test-amp:e2e": "npx wdio tests/e2e/config/wdio.amp-dev.conf.ts --cucumberOpts.tagExpression='@amp_fe_sanity'",
@@ -45,15 +36,5 @@
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4",
     "winston": "^3.5.0"
-  },
-  "engines": {
-    "node": "16.13.1",
-    "npm": "8.1.2"
-  },
-  "lint-staged": {
-    "*.{vue,js}": [
-      "npm run lint",
-      "npm run env-map-check"
-    ]
   }
 }
