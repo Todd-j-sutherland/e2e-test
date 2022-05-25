@@ -1,10 +1,10 @@
 #!/bin/sh -l
 # npm install
 
+ls
 echo "jeff------------------- $1 -----------------------------"
 time=$(date)
 echo "::set-output name=time::$time"
-ls
-npx wdio tests/e2e/config/wdio.develop.conf.ts --cucumberOpts.tagExpression='@ob_fe_sanity'
+npm run test
 # npm install
 # npm run test
