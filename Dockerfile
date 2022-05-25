@@ -23,11 +23,11 @@
 # CMD npm run test:e2e 
 FROM ianwalter/puppeteer:latest
 # FROM node:16.13.1
-WORKDIR /e2e-test
+# WORKDIR /e2e-test
 COPY . /e2e-test
-RUN apt update && apt install default-jdk -y
+# RUN apt update && apt install default-jdk -y
 # COPY package.json .
-RUN npm install
+# RUN npm install
 RUN ls
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
