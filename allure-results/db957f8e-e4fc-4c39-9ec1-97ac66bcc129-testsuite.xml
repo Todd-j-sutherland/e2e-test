@@ -1,0 +1,266 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653465340661' stop='1653465434291'>
+    <name>Onboarding E2E full single application - Front End</name>
+    <title>Onboarding E2E full single application - Front End</title>
+    <test-cases>
+        <test-case start='1653465340678' status='broken' stop='1653465434289'>
+            <name>OB_TC101: Run onboarding for New Users</name>
+            <title>OB_TC101: Run onboarding for New Users</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+                <parameter kind='environment-variable' name='Executed in Environment: ' value='undefined'/>
+            </parameters>
+            <steps>
+                <step start='1653465340680' status='passed' stop='1653465340681'>
+                    <name>Then Set global data scenario_OB_TC101</name>
+                    <title>Then Set global data scenario_OB_TC101</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465340681' status='passed' stop='1653465354600'>
+                    <name>Given Onboarding /apply is opened</name>
+                    <title>Given Onboarding /apply is opened</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465340682' status='passed' stop='1653465340682'>
+                            <name>start - Opening /apply onboarding page</name>
+                            <title>start - Opening /apply onboarding page</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465354595' status='passed' stop='1653465354595'>
+                            <name>successful - Opened /apply onboarding page</name>
+                            <title>successful - Opened /apply onboarding page</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465354600' status='passed' stop='1653465359850'>
+                    <name>Then clear local session data</name>
+                    <title>Then clear local session data</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465359852' status='passed' stop='1653465360487'>
+                    <name>When User completes preApp apply page</name>
+                    <title>When User completes preApp apply page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465359854' status='passed' stop='1653465359854'>
+                            <name>preApp: /apply, preAppApply()</name>
+                            <title>preApp: /apply, preAppApply()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465360487' status='passed' stop='1653465360487'>
+                            <name>preApp: /apply, preAppApply() successful</name>
+                            <title>preApp: /apply, preAppApply() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465360488' status='passed' stop='1653465360703'>
+                    <name>And User completes preApp existing-customer page</name>
+                    <title>And User completes preApp existing-customer page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465360488' status='passed' stop='1653465360488'>
+                            <name>preApp: /existing-customer, preAppExisting()</name>
+                            <title>preApp: /existing-customer, preAppExisting()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465360702' status='passed' stop='1653465360702'>
+                            <name>preApp: /existing-customer, preAppExisting() successful</name>
+                            <title>preApp: /existing-customer, preAppExisting() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465360703' status='passed' stop='1653465362367'>
+                    <name>And User completes intent property create page</name>
+                    <title>And User completes intent property create page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465361934' status='passed' stop='1653465361934'>
+                            <name>property intent: /property/create, propertiesIntent()</name>
+                            <title>property intent: /property/create, propertiesIntent()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465362065' status='passed' stop='1653465362065'>
+                            <name>property intent: /property/create, propertiesIntent() successful </name>
+                            <title>property intent: /property/create, propertiesIntent() successful </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465362231' status='passed' stop='1653465362231'>
+                            <name>property intent: /property/create, propertiesUse()</name>
+                            <title>property intent: /property/create, propertiesUse()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465362364' status='passed' stop='1653465362364'>
+                            <name>property intent: /property/create, propertiesUse() successful</name>
+                            <title>property intent: /property/create, propertiesUse() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465362367' status='passed' stop='1653465368843'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465368843' status='passed' stop='1653465385237'>
+                    <name>And User completes property address Section</name>
+                    <title>And User completes property address Section</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465368858' status='passed' stop='1653465368858'>
+                            <name>property address type: /property/create, propertiesAddressType()</name>
+                            <title>property address type: /property/create, propertiesAddressType()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465371823' status='passed' stop='1653465371823'>
+                            <name>property address type: /property/create, propertiesAddressType() successful</name>
+                            <title>property address type: /property/create, propertiesAddressType() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465371825' status='passed' stop='1653465371825'>
+                            <name>property address: /property/create, propertiesAddress()</name>
+                            <title>property address: /property/create, propertiesAddress()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465385182' status='passed' stop='1653465385182'>
+                            <name>property address: /property/create, propertiesAddress() successful</name>
+                            <title>property address: /property/create, propertiesAddress() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465385237' status='passed' stop='1653465391966'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465391966' status='passed' stop='1653465396747'>
+                    <name>And User completes estimated value property create page</name>
+                    <title>And User completes estimated value property create page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465391973' status='passed' stop='1653465391973'>
+                            <name>property estimate: /property/create, propertiesEstimatedValue()</name>
+                            <title>property estimate: /property/create, propertiesEstimatedValue()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465392422' status='passed' stop='1653465392422'>
+                            <name>property address: /property/create, propertiesEstimatedValue() successful</name>
+                            <title>property address: /property/create, propertiesEstimatedValue() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465394528' status='passed' stop='1653465394528'>
+                            <name>property ownership: /property/create, propertiesOwnership()</name>
+                            <title>property ownership: /property/create, propertiesOwnership()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465394723' status='passed' stop='1653465394723'>
+                            <name>property ownership: /property/create, propertiesOwnership() successful</name>
+                            <title>property ownership: /property/create, propertiesOwnership() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465396747' status='passed' stop='1653465403083'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465403083' status='passed' stop='1653465407535'>
+                    <name>Then User completes outstanding loan property create page</name>
+                    <title>Then User completes outstanding loan property create page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465403094' status='passed' stop='1653465403094'>
+                            <name>property outstanding loan: /property/create, propertiesOutstandingLoan()</name>
+                            <title>property outstanding loan: /property/create, propertiesOutstandingLoan()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465405377' status='passed' stop='1653465405377'>
+                            <name>property current loan: /property/create, propertiesCurrentRate()</name>
+                            <title>property current loan: /property/create, propertiesCurrentRate()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653465405534' status='passed' stop='1653465405534'>
+                            <name>property outstanding loan: /property/create, propertiesCurrentRate() successful</name>
+                            <title>property outstanding loan: /property/create, propertiesCurrentRate() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465407535' status='passed' stop='1653465414161'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465414161' status='broken' stop='1653465434288'>
+                    <name>Then User completes form on page continue to next page</name>
+                    <title>Then User completes form on page continue to next page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653465434265' status='failed' stop='1653465434266'>
+                            <name>OB_TC101: Failed: User completes form on page continue to next page, continue button is not there</name>
+                            <title>OB_TC101: Failed: User completes form on page continue to next page, continue button is not there</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653465434289' status='canceled' stop='1653465434289'>
+                    <name>Then User completes loan features section</name>
+                    <title>Then User completes loan features section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653465434289' status='canceled' stop='1653465434289'>
+                    <name>Then User completes form on page continue to next page</name>
+                    <title>Then User completes form on page continue to next page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: OB_TC101: Failed: User completes form on page continue to next page, continue button is not there</message>
+                <stack-trace>Error: OB_TC101: Failed: User completes form on page continue to next page, continue button is not there
+                    at async GlobalPage.click (/Users/toddsutherland/Library/CloudStorage/OneDrive-Verteva/dev/e2e-test/tests/e2e/test/page-objects/page.ts:11:5)
+                    at async GlobalPage.continueToNextPage (/Users/toddsutherland/Library/CloudStorage/OneDrive-Verteva/dev/e2e-test/tests/e2e/test/page-objects/onboarding.global.ts:59:7)
+                    at async CustomWorld.&lt;anonymous> (/Users/toddsutherland/Library/CloudStorage/OneDrive-Verteva/dev/e2e-test/tests/e2e/test/features/step-definitions/commons.ts:48:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

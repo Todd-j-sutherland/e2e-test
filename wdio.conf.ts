@@ -1,11 +1,11 @@
 //@ts-nocheck
 // import dotenv from "dotenv";
-import allure from "@wdio/allure-reporter";
+import allure from '@wdio/allure-reporter';
 // import fs from "fs";
 
 // dotenv.config();
 const drivers = {
-  chrome: "latest",
+  chrome: 'latest',
 };
 
 export const config: WebdriverIO.Config = {
@@ -33,7 +33,7 @@ export const config: WebdriverIO.Config = {
     // for all available options
     tsNodeOpts: {
       transpileOnly: true,
-      project: "tsconfig.json",
+      project: 'tsconfig.json',
     },
     // tsconfig-paths is only used if "tsConfigPathsOpts" are provided, if you
     // do please make sure "tsconfig-paths" is installed as dependency
@@ -57,7 +57,7 @@ export const config: WebdriverIO.Config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./tests/e2e/test/features/**/*.feature"],
+  specs: ['./tests/e2e/test/features/**/*.feature'],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -87,14 +87,14 @@ export const config: WebdriverIO.Config = {
   capabilities: [
     {
       maxInstances: 10,
-      browserName: "chrome",
-      "goog:chromeOptions": {
+      browserName: 'chrome',
+      'goog:chromeOptions': {
         args: [
-          "--window-size=1920,1000",
-          "--disable-dev-shm-usage",
-          "--no-sandbox",
-          "--auto-open-devtools-for-tabs",
-          "--headless",
+          '--window-size=1920,1000',
+          '--disable-dev-shm-usage',
+          '--no-sandbox',
+          '--auto-open-devtools-for-tabs',
+          '--headless',
         ],
       },
       acceptInsecureCerts: true,
@@ -107,7 +107,7 @@ export const config: WebdriverIO.Config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "warn",
+  logLevel: 'warn',
   //
   // Set specific log levels per logger
   // loggers:
@@ -131,7 +131,7 @@ export const config: WebdriverIO.Config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: "http://localhost",
+  baseUrl: 'https://dev-apply.verteva.com.au',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 100000,
@@ -154,9 +154,9 @@ export const config: WebdriverIO.Config = {
 
   services: [
     [
-      "selenium-standalone",
+      'selenium-standalone',
       {
-        logPath: "logs",
+        logPath: 'logs',
         installArgs: { drivers }, // drivers to install
         args: { drivers }, // drivers to use
       },
@@ -169,7 +169,7 @@ export const config: WebdriverIO.Config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: "cucumber",
+  framework: 'cucumber',
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
@@ -184,11 +184,11 @@ export const config: WebdriverIO.Config = {
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
-    "spec",
+    'spec',
     [
-      "allure",
+      'allure',
       {
-        outputDir: "allure-results",
+        outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
         useCucumberStepReporter: true,
       },
@@ -200,7 +200,7 @@ export const config: WebdriverIO.Config = {
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
     // <string[]> (file/dir) require files before executing features
-    require: ["./tests/e2e/test/features/step-definitions/**/*.ts"],
+    require: ['./tests/e2e/test/features/step-definitions/**/*.ts'],
     // <boolean> show full backtrace for errors
     backtrace: false,
     // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
@@ -209,7 +209,7 @@ export const config: WebdriverIO.Config = {
     dryRun: false,
     // <boolean> abort the run on first failure
     failFast: false,
-    format: ["pretty"],
+    format: ['pretty'],
     // <boolean> hide step definition snippets for pending steps
     snippets: true,
     // <boolean> hide source uris
@@ -217,7 +217,7 @@ export const config: WebdriverIO.Config = {
     // <boolean> fail if there are any undefined or pending steps
     strict: false,
     // <string> (expression) only execute the features or scenarios with tags matching the expression
-    tagExpression: "",
+    tagExpression: '',
     // <number> timeout for step definitions
     timeout: 600000,
     // <boolean> Enable this config to treat undefined definitions as warnings.
@@ -297,7 +297,7 @@ export const config: WebdriverIO.Config = {
   beforeScenario: function(world, context) {
     let arr = world.pickle.name.split(/:/);
     if (arr.length > 0) browser.config.testid = arr[0];
-    if (!browser.config.testid) browser.config.testid = "Test";
+    if (!browser.config.testid) browser.config.testid = 'Test';
   },
   /**
    *
@@ -350,7 +350,7 @@ export const config: WebdriverIO.Config = {
   afterFeature: function(uri, feature) {
     //console.log(browser.config);
     allure.addEnvironment(
-      "Executed in Environment: ",
+      'Executed in Environment: ',
       browser.config.environment
     );
   },
