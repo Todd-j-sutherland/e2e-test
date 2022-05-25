@@ -21,7 +21,8 @@
 # ENTRYPOINT ["/entrypoint.sh"]
 
 # CMD npm run test:e2e 
-FROM ianwalter/puppeteer:latest
+# FROM ianwalter/puppeteer:latest
+FROM selenium/standalong-chrome
 RUN apt update && apt install default-jdk -y
 # FROM node:16.13.1
 COPY entrypoint.sh /entrypoint.sh
