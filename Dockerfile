@@ -27,7 +27,7 @@ FROM ianwalter/puppeteer:latest
 # ADD . /e2e-test
 # RUN apt update && apt install default-jdk -y
 # COPY package.json .
-# RUN npm install
+RUN npm install
 RUN ls
 COPY entrypoint.sh /entrypoint.sh
 # RUN chmod +x /entrypoint.sh
