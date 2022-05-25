@@ -25,7 +25,7 @@ FROM ianwalter/puppeteer:latest
 # FROM node:16.13.1
 # WORKDIR /e2e-test
 # ADD . /e2e-test
-# RUN apt update && apt install default-jdk -y
+RUN apt update && apt install default-jdk -y
 # COPY package.json .
 RUN npm install
 RUN ls
