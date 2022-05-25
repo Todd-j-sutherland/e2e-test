@@ -26,5 +26,6 @@ FROM node:16.13.1
 COPY entrypoint.sh /entrypoint.sh
 COPY package.json .
 RUN npm install
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+CMD npm run test
+# RUN chmod +x /entrypoint.sh
+# ENTRYPOINT ["/entrypoint.sh"]
