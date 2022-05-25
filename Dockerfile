@@ -7,17 +7,21 @@
 
 # ENTRYPOINT ["/entrypoint.sh"]
 
-FROM ianwalter/puppeteer:latest
-# FROM node:16.13.1
-# RUN apt update && apt install default-jdk -y
-WORKDIR /e2e-test
-# COPY . /e2e-test
-COPY package.json .
-RUN npm install
-# Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+# FROM ianwalter/puppeteer:latest
+# # FROM node:16.13.1
+# # RUN apt update && apt install default-jdk -y
+# WORKDIR /e2e-test
+# # COPY . /e2e-test
+# COPY package.json .
+# RUN npm install
+# # Copies your code file from your action repository to the filesystem path `/` of the container
+# COPY entrypoint.sh /entrypoint.sh
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+# # Code file to execute when the docker container starts up (`entrypoint.sh`)
+# ENTRYPOINT ["/entrypoint.sh"]
 
 # CMD npm run test:e2e 
+FROM ianwalter/puppeteer:latest
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
