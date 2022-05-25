@@ -14,13 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout  
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: SetUp NodeJs
       uses: actions/setup-node@v1
       with:
         node-version: 16.3.0
-
-    - uses: actions/checkout@v2
+    
     - name: Run docker-compose 
       run: docker-compose up --exit-code-from automation
   
