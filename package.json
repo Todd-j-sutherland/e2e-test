@@ -4,7 +4,7 @@
   "description": "Frontend & Backend Automation for Onboarding & Salesforce",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.conf.ts"
+    "test": "npx wdio tests/e2e/config/wdio.develop.conf.ts --cucumberOpts.tagExpression='@ob_fe_sanity'"
   },
   "keywords": [
     "wdio",
