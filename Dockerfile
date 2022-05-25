@@ -23,5 +23,7 @@
 # CMD npm run test:e2e 
 FROM ianwalter/puppeteer:latest
 COPY entrypoint.sh /entrypoint.sh
+COPY package.json .
+RUN npm install
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
