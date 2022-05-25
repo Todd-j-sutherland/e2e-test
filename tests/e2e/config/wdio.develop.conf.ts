@@ -1,4 +1,4 @@
-import { config as baseConfig } from '../wdio.conf';
+import { config as baseConfig } from '../../../wdio.conf';
 export const config = Object.assign(baseConfig, {
   environment: 'Dev',
   ob_baseURL: 'https://dev-apply.verteva.com.au',
