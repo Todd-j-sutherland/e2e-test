@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  e2etest:
+    build: ./Dockerfile
+    image: 'e2e_test_image'
+    volumes:
+      - e2e-test:./e2e-test
+
+volumes:
+  e2e-test:
