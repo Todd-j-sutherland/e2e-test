@@ -41,6 +41,7 @@
 
 # CMD npx wdio tests/e2e/config/wdio.develop.conf.ts --cucumberOpts.tagExpression='@ob_fe_sanity'
 
+
 FROM node:16.13.1
 RUN apt update && apt install default-jdk -y
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \ 
