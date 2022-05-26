@@ -1,0 +1,133 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653444327431' stop='1653444327728'>
+    <name>Onboarding E2E full single application - Front End</name>
+    <title>Onboarding E2E full single application - Front End</title>
+    <test-cases>
+        <test-case start='1653444327453' status='broken' stop='1653444327725'>
+            <name>OB_TC101: Run onboarding for New Users</name>
+            <title>OB_TC101: Run onboarding for New Users</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+                <parameter kind='environment-variable' name='Executed in Environment: ' value='undefined'/>
+            </parameters>
+            <steps>
+                <step start='1653444327456' status='passed' stop='1653444327458'>
+                    <name>Then Set global data scenario_OB_TC101</name>
+                    <title>Then Set global data scenario_OB_TC101</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327458' status='broken' stop='1653444327725'>
+                    <name>Given Onboarding /apply is opened</name>
+                    <title>Given Onboarding /apply is opened</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444327459' status='passed' stop='1653444327459'>
+                            <name>start - Opening /apply onboarding page</name>
+                            <title>start - Opening /apply onboarding page</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444327725' status='canceled' stop='1653444327725'>
+                    <name>Then clear local session data</name>
+                    <title>Then clear local session data</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327725' status='canceled' stop='1653444327725'>
+                    <name>When User completes preApp apply page</name>
+                    <title>When User completes preApp apply page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327725' status='canceled' stop='1653444327725'>
+                    <name>And User completes preApp existing-customer page</name>
+                    <title>And User completes preApp existing-customer page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327725' status='canceled' stop='1653444327725'>
+                    <name>And User completes intent property create page</name>
+                    <title>And User completes intent property create page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327725' status='canceled' stop='1653444327726'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327726' status='canceled' stop='1653444327726'>
+                    <name>And User completes property address Section</name>
+                    <title>And User completes property address Section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327726' status='canceled' stop='1653444327726'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327726' status='canceled' stop='1653444327727'>
+                    <name>And User completes estimated value property create page</name>
+                    <title>And User completes estimated value property create page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327727' status='canceled' stop='1653444327727'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327727' status='canceled' stop='1653444327727'>
+                    <name>Then User completes outstanding loan property create page</name>
+                    <title>Then User completes outstanding loan property create page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327727' status='canceled' stop='1653444327727'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327727' status='canceled' stop='1653444327727'>
+                    <name>Then User completes form on page continue to next page</name>
+                    <title>Then User completes form on page continue to next page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327727' status='canceled' stop='1653444327727'>
+                    <name>Then User completes loan features section</name>
+                    <title>Then User completes loan features section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444327727' status='canceled' stop='1653444327727'>
+                    <name>Then User completes form on page continue to next page</name>
+                    <title>Then User completes form on page continue to next page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: unknown error: net::ERR_CONNECTION_REFUSED</message>
+                <stack-trace>unknown error: unknown error: net::ERR_CONNECTION_REFUSED
+                  (Session info: headless chrome=101.0.4951.64)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async CustomWorld.&lt;anonymous> (/Users/toddsutherland/Library/CloudStorage/OneDrive-Verteva/dev/e2e-test/tests/e2e/test/features/step-definitions/onboarding_fe/pre_app.ts:13:3)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

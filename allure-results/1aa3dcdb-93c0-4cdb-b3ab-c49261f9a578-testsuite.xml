@@ -1,0 +1,277 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653444407133' stop='1653444509780'>
+    <name>Onboarding E2E full single application - Front End</name>
+    <title>Onboarding E2E full single application - Front End</title>
+    <test-cases>
+        <test-case start='1653444407145' status='passed' stop='1653444509731'>
+            <name>OB_TC101: Run onboarding for New Users</name>
+            <title>OB_TC101: Run onboarding for New Users</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+                <parameter kind='environment-variable' name='Executed in Environment: ' value='develop'/>
+            </parameters>
+            <steps>
+                <step start='1653444407146' status='passed' stop='1653444407147'>
+                    <name>Then Set global data scenario_OB_TC101</name>
+                    <title>Then Set global data scenario_OB_TC101</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444407147' status='passed' stop='1653444416642'>
+                    <name>Given Onboarding /apply is opened</name>
+                    <title>Given Onboarding /apply is opened</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444407148' status='passed' stop='1653444407148'>
+                            <name>start - Opening /apply onboarding page</name>
+                            <title>start - Opening /apply onboarding page</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444416640' status='passed' stop='1653444416641'>
+                            <name>successful - Opened /apply onboarding page</name>
+                            <title>successful - Opened /apply onboarding page</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444416642' status='passed' stop='1653444421787'>
+                    <name>Then clear local session data</name>
+                    <title>Then clear local session data</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444421794' status='passed' stop='1653444422092'>
+                    <name>When User completes preApp apply page</name>
+                    <title>When User completes preApp apply page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444421803' status='passed' stop='1653444421803'>
+                            <name>preApp: /apply, preAppApply()</name>
+                            <title>preApp: /apply, preAppApply()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444422092' status='passed' stop='1653444422092'>
+                            <name>preApp: /apply, preAppApply() successful</name>
+                            <title>preApp: /apply, preAppApply() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444422093' status='passed' stop='1653444422291'>
+                    <name>And User completes preApp existing-customer page</name>
+                    <title>And User completes preApp existing-customer page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444422093' status='passed' stop='1653444422093'>
+                            <name>preApp: /existing-customer, preAppExisting()</name>
+                            <title>preApp: /existing-customer, preAppExisting()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444422290' status='passed' stop='1653444422290'>
+                            <name>preApp: /existing-customer, preAppExisting() successful</name>
+                            <title>preApp: /existing-customer, preAppExisting() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444422291' status='passed' stop='1653444423435'>
+                    <name>And User completes intent property create page</name>
+                    <title>And User completes intent property create page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444423048' status='passed' stop='1653444423048'>
+                            <name>property intent: /property/create, propertiesIntent()</name>
+                            <title>property intent: /property/create, propertiesIntent()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444423129' status='passed' stop='1653444423129'>
+                            <name>property intent: /property/create, propertiesIntent() successful </name>
+                            <title>property intent: /property/create, propertiesIntent() successful </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444423242' status='passed' stop='1653444423242'>
+                            <name>property intent: /property/create, propertiesUse()</name>
+                            <title>property intent: /property/create, propertiesUse()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444423433' status='passed' stop='1653444423433'>
+                            <name>property intent: /property/create, propertiesUse() successful</name>
+                            <title>property intent: /property/create, propertiesUse() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444423435' status='passed' stop='1653444430578'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444430579' status='passed' stop='1653444458179'>
+                    <name>And User completes property address Section</name>
+                    <title>And User completes property address Section</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444430622' status='passed' stop='1653444430622'>
+                            <name>property address type: /property/create, propertiesAddressType()</name>
+                            <title>property address type: /property/create, propertiesAddressType()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444442607' status='passed' stop='1653444442607'>
+                            <name>property address type: /property/create, propertiesAddressType() successful</name>
+                            <title>property address type: /property/create, propertiesAddressType() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444442694' status='passed' stop='1653444442694'>
+                            <name>property address: /property/create, propertiesAddress()</name>
+                            <title>property address: /property/create, propertiesAddress()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444456484' status='passed' stop='1653444456484'>
+                            <name>property address: /property/create, propertiesAddress() successful</name>
+                            <title>property address: /property/create, propertiesAddress() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444458190' status='passed' stop='1653444465372'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444465372' status='passed' stop='1653444469853'>
+                    <name>And User completes estimated value property create page</name>
+                    <title>And User completes estimated value property create page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444465390' status='passed' stop='1653444465390'>
+                            <name>property estimate: /property/create, propertiesEstimatedValue()</name>
+                            <title>property estimate: /property/create, propertiesEstimatedValue()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444465545' status='passed' stop='1653444465545'>
+                            <name>property address: /property/create, propertiesEstimatedValue() successful</name>
+                            <title>property address: /property/create, propertiesEstimatedValue() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444467623' status='passed' stop='1653444467623'>
+                            <name>property ownership: /property/create, propertiesOwnership()</name>
+                            <title>property ownership: /property/create, propertiesOwnership()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444467800' status='passed' stop='1653444467800'>
+                            <name>property ownership: /property/create, propertiesOwnership() successful</name>
+                            <title>property ownership: /property/create, propertiesOwnership() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444469854' status='passed' stop='1653444476461'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444476461' status='passed' stop='1653444481544'>
+                    <name>Then User completes outstanding loan property create page</name>
+                    <title>Then User completes outstanding loan property create page</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444476467' status='passed' stop='1653444476467'>
+                            <name>property outstanding loan: /property/create, propertiesOutstandingLoan()</name>
+                            <title>property outstanding loan: /property/create, propertiesOutstandingLoan()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444479193' status='passed' stop='1653444479193'>
+                            <name>property current loan: /property/create, propertiesCurrentRate()</name>
+                            <title>property current loan: /property/create, propertiesCurrentRate()</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444479534' status='passed' stop='1653444479534'>
+                            <name>property outstanding loan: /property/create, propertiesCurrentRate() successful</name>
+                            <title>property outstanding loan: /property/create, propertiesCurrentRate() successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444481544' status='passed' stop='1653444488106'>
+                    <name>Then User moves to [property] cascading form section</name>
+                    <title>Then User moves to [property] cascading form section</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444488111' status='passed' stop='1653444496634'>
+                    <name>Then User completes form on page continue to next page</name>
+                    <title>Then User completes form on page continue to next page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1653444496634' status='passed' stop='1653444501355'>
+                    <name>Then User completes loan features section</name>
+                    <title>Then User completes loan features section</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653444496642' status='passed' stop='1653444496642'>
+                            <name>loans: loan/create loan features</name>
+                            <title>loans: loan/create loan features</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444496860' status='passed' stop='1653444496860'>
+                            <name>loans: loan/create loan features successful</name>
+                            <title>loans: loan/create loan features successful</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444498895' status='passed' stop='1653444498895'>
+                            <name>loans: loan/create save change</name>
+                            <title>loans: loan/create save change</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653444499198' status='passed' stop='1653444499199'>
+                            <name>loans: loan/create save change success</name>
+                            <title>loans: loan/create save change success</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653444501357' status='passed' stop='1653444509653'>
+                    <name>Then User completes form on page continue to next page</name>
+                    <title>Then User completes form on page continue to next page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

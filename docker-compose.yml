@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  automation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /e2e-test
+    ports:
+      - '4442:4442'
+    volumes:
+      - ./:/e2e-test
+
+volumes:
+  e2e-test:
