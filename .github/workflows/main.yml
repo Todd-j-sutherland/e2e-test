@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Checkout  
+      - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
@@ -13,7 +13,7 @@ jobs:
         id: hello
         uses: Todd-j-sutherland/e2e-test@m/docker-compose
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: "Mona the Octocat"
       # Use the output from the `hello` step test
       # - uses: actions/checkout@v2
       - name: get the test output && slack notifications
@@ -25,14 +25,13 @@ jobs:
         with:
           payload: |
             {
-              "text": "Onboarding end-2-end testing",
-              "blocks": [
+            "attachments":
+              [
                 {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "GitHub Action test result: : dfdd\n test failed.."
-                  }
-                }
+                  "mrkdwn_in": ["text"],
+                  "color": "#36a64f",
+                  "pretext": "end-2-end tests have failed",
+                  "text": "GitHub Action test result: : dfdd\n test failed.."
+                },
               ]
             }
