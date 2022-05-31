@@ -30,7 +30,6 @@ jobs:
                 {
                   "type": "section",
                   "text": {
-                    "color": "bad"
                     "type": "mrkdwn",
                     "text": "GitHub Action test result: : dfdd\n test failed.."
                   }
