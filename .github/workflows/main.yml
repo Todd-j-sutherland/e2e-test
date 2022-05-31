@@ -16,5 +16,21 @@ jobs:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step test
       # - uses: actions/checkout@v2
-      - name: Run docker-compose 
-        run: docker-compose up --exit-code-from automation
+      - name: get the test output && slack notifications
+        # run: echo "results are in-- ${{ steps.e2e.outputs.result }}"
+        uses: slackapi/slack-github-action@v1.18.0
+        with:
+          channel-id: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
+          payload: |
+            {
+              "text": "Onboarding end-2-end testing",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "GitHub Action test result: : dfdd\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  }
+                }
+              ]
+            }
