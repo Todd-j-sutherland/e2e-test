@@ -17,6 +17,7 @@ jobs:
       # Use the output from the `hello` step test
       # - uses: actions/checkout@v2
       - name: Get current date
+        if: failure()
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: get the test output && slack notifications
@@ -26,4 +27,4 @@ jobs:
         with:
           payload-file-path: "./.github/workflows/payloads.json"
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
