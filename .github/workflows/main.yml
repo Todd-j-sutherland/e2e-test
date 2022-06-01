@@ -24,6 +24,9 @@ jobs:
         if: failure()
         # run: echo "results are in-- ${{ steps.e2e.outputs.result }}"
         uses: slackapi/slack-github-action@v1.19.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
         with:
           payload: |
             {
@@ -47,6 +50,3 @@ jobs:
                 }
               ]
             }
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
