@@ -29,14 +29,23 @@ jobs:
         with:
           payload: |
             {
-              "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+              "text": "larry: has been deployed to platform-larry-uat environment",
               "blocks": [
                 {
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                    "text": "`larry:${{ github.event.inputs.branchName }}` has been deployed to `platform-larry-uat`"
                   }
+                },
+                {
+                  "type": "section",
+                  "text": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "Initiated by *${{ github.actor }}*."
+                    }
+                  ]
                 }
               ]
             }
