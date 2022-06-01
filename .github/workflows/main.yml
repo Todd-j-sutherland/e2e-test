@@ -29,23 +29,25 @@ jobs:
           payload: |
             {
             "blocks": [
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "Automation test results:\n*<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Failed test link>*"
-                }
-              },
-              {
-                "type": "section",
-                "fields": [
-                  {
+                {
+                  "type": "section",
+                  "text": {
                     "type": "mrkdwn",
-                    "text": "*Type:*\nE2E test"
-                  },
-                  {
-                    "type": "mrkdwn",
-                    "text": "*When:*\n${{ steps.date.outputs.date }}"
+                    "text": "Automation test results:\n*<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Failed test link>*"
                   }
-                ]
-              }
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Type:*\nE2E test"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*When:*\n${{ steps.date.outputs.date }}"
+                    }
+                  ]
+                }
+              ]
+            }
