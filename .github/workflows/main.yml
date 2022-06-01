@@ -19,7 +19,7 @@ jobs:
       - name: Get current date
         if: failure()
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "ls ::set-output name=date::$(date +'%Y-%m-%d')"
       - name: get the test output && slack notifications
         if: failure()
         # run: echo "results are in-- ${{ steps.e2e.outputs.result }}"
