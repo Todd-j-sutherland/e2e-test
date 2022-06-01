@@ -25,6 +25,6 @@ jobs:
         # run: echo "results are in-- ${{ steps.e2e.outputs.result }}"
         uses: slackapi/slack-github-action@v1.19.0
         with:
-          payload-file-path: "/.github/resources/payload-notification.json"
+          payload-file-path: "./resources/payload-notification.json"
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
