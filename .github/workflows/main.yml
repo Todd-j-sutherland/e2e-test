@@ -16,6 +16,9 @@ jobs:
           who-to-greet: "Mona the Octocat"
       # Use the output from the `hello` step test
       # - uses: actions/checkout@v2
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: get the test output && slack notifications
         if: failure()
         # run: echo "results are in-- ${{ steps.e2e.outputs.result }}"
@@ -25,38 +28,26 @@ jobs:
         with:
           payload: |
             {
-              "attachments": [
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "Automation test results:\n*<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Failed test link>*"
+                }
+              },
+              {
+                "type": "section",
+                "fields": [
                   {
-                    "mrkdwn_in": ["text"],
-                      "color": "#36a64f",
-                      "pretext": "Optional pre-text that appears above the attachment block",
-                      "author_name": "author_name",
-                      "author_link": "http://flickr.com/bobby/",
-                      "author_icon": "https://placeimg.com/16/16/people",
-                      "title": "title",
-                      "title_link": "https://api.slack.com/",
-                      "text": "Optional `text` that appears within the attachment",
-                      "fields": [
-                          {
-                              "title": "A field's title",
-                              "value": "This field's value",
-                              "short": false
-                          },
-                          {
-                              "title": "A short field's title",
-                              "value": "A short field's value",
-                              "short": true
-                          },
-                          {
-                              "title": "A second short field's title",
-                              "value": "A second short field's value",
-                              "short": true
-                          }
-                      ],
-                      "thumb_url": "http://placekitten.com/g/200/200",
-                      "footer": "footer",
-                      "footer_icon": "https://platform.slack-edge.com/img/default_application_icon.png",
-                      "ts": 123456789
+                    "type": "mrkdwn",
+                    "text": "*Type:*\nE2E test"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*When:*\n${{ steps.date.outputs.date }}"
                   }
-              ]
-            }
+                ]
+              }
+            ]
+          }
