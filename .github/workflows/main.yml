@@ -25,8 +25,28 @@ jobs:
         # run: echo "results are in-- ${{ steps.e2e.outputs.result }}"
         uses: slackapi/slack-github-action@v1.19.0
         with:
-          channel-id: ${{ secrets.SLACK_CHANNEL }}
-          slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+          payload: |
+            {
+              "text": "larry: has been deployed to platform-larry-uat environment",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "`larry:${{ github.event.inputs.branchName }}` has been deployed to `platform-larry-uat`"
+                  }
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "Initiated by *${{ github.actor }}*."
+                    }
+                  ]
+                }
+              ]
+            }
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
