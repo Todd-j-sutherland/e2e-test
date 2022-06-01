@@ -27,7 +27,6 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEPLOYMENT_NOTIFICATION_CHANNEL }}
         with:
-          channel-id: ${{ secrets.SLACK_CHANNEL }}
           payload: |
             {
               "text": "larry: has been deployed to platform-larry-uat environment",
