@@ -15,4 +15,4 @@ jobs:
         with:
           who-to-greet: 'Mona the Octocat'
       - name: get the results
-        run: echo "results are - ${{env}"
+        run: echo "results are - ${{env}}"
