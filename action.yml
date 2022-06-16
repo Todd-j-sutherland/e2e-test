@@ -16,7 +16,7 @@ runs:
     - run: docker-compose up automation
       id: docker-compose
       shell: bash
-      # working-directory: onboarding-web
+      working-directory: onboarding-web
     - name: env echo111
       run: ls -a .
       shell: bash
