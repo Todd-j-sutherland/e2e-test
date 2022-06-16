@@ -16,7 +16,7 @@ runs:
     - run: docker-compose up automation
       id: docker-compose
       shell: bash
-      working-directory: onboarding-web
+      working-directory: e2e-test
     - name: env echo111
       run: ls -a .
       shell: bash
@@ -24,7 +24,7 @@ runs:
     #   run: ls
     #   shell: bash
     - uses: actions/upload-artifact@v3
-      working-directory: onboarding-web
+      working-directory: e2e-test
       with:
         name: test-result
         path: results.txt
