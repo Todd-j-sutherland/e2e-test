@@ -30,4 +30,4 @@ runs:
     - uses: actions/upload-artifact@v3
       with:
         name: test-result
-        path: e2e-test/e2e-test/results.txt
+        path:  ${GITHUB_WORKSPACE}/results.txt
