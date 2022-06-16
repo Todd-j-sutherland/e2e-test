@@ -34,7 +34,6 @@
 
 # FROM ianwalter/puppeteer:latest
 # RUN apt update && apt install default-jdk -y
-# WORKDIR /e2e-test
 # ADD . /e2e-test
 
 # RUN npm install
@@ -43,6 +42,7 @@
 
 
 FROM node:16.13.1
+WORKDIR /app
 ADD . /app
 COPY entrypoint.sh /entrypoint.sh
 # CMD ["/bin/bash"]
