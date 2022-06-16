@@ -37,5 +37,6 @@ services:
     #   - chrome
     environment:
       - HOST_NAME=selenium-hub
+      - TODD_NAME=test
       # Make sure to run using below command `docker-compose up --exit-code-from automation`
       # `--exit-code-from automation` command will exist all service if automation exits
