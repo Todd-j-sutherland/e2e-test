@@ -23,7 +23,8 @@ runs:
     # - name: ls echo
     #   run: ls
     #   shell: bash
-    # - uses: actions/upload-artifact@v3
-    #   with:
-    #     name: test-result
-    #     path: results.txt
+    - uses: actions/upload-artifact@v3
+      working-directory: onboarding-web
+      with:
+        name: test-result
+        path: results.txt
