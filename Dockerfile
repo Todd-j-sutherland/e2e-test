@@ -42,8 +42,8 @@
 
 
 FROM node:16.13.1
-# WORKDIR /app
-# ADD . /app
+WORKDIR /app
+ADD . /app
 COPY entrypoint.sh /entrypoint.sh
 # CMD ["/bin/bash"]
 ARG GITLAB_USER=default_user_name
