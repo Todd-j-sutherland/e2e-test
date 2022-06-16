@@ -43,8 +43,8 @@
 
 
 FROM node:16.13.1
+ADD . /app
 COPY entrypoint.sh /entrypoint.sh
-
 # CMD ["/bin/bash"]
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
