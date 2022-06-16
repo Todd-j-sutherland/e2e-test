@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
       - name: Hello world action step
         id: hello
-        uses: Todd-j-sutherland/e2e-test@head/test1
+        uses: Todd-j-sutherland/e2e-test@testing_new
         with:
           who-to-greet: 'Mona the Octocat'
       - name: env echo 1
