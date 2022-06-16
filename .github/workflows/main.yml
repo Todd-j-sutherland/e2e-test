@@ -14,12 +14,12 @@ jobs:
         uses: Todd-j-sutherland/e2e-test@testing_new
         with:
           who-to-greet: 'Mona the Octocat'
-      - name: env echo 1
-        run: env
-        shell: bash
-      - name: ls echo 1
-        run: ls
-        shell: bash
+      # - name: env echo 1
+      #   run: env
+      #   shell: bash
+      # - name: ls echo 1
+      #   run: ls
+      #   shell: bash
       # - uses: actions/upload-artifact@v3
       #   with:
       #     name: test-result

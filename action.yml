@@ -16,15 +16,18 @@ runs:
     - run: docker-compose up automation
       id: docker-compose
       shell: bash
-      working-directory: e2e-test
     - name: env echo111
       run: ls -a .
+      shell: bash
+    - name: env echo222
+      run: |
+        cd ../
+        ls -a .
       shell: bash
     # - name: ls echo
     #   run: ls
     #   shell: bash
     - uses: actions/upload-artifact@v3
-      working-directory: e2e-test
       with:
         name: test-result
         path: results.txt
