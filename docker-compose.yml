@@ -27,9 +27,6 @@ services:
   automation:
     image: automation-test:latest
     container_name: automationtest
-    command:
-      - ${PARTNER}
-      - ${ENVIRONMENT}
     build:
       context: .
       dockerfile: Dockerfile

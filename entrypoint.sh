@@ -3,4 +3,5 @@ ls
 pwd
 echo "jeff------------------- -----------------------------"
 echo "::set-output name=resultE2E:: SUCCESfffS" > "results.txt"
-ls
+
+ls -a .

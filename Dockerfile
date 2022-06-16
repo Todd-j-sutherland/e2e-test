@@ -49,6 +49,3 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 # COPY results.txt /results.txt
-RUN ls
-ADD . /app
-RUN ls
