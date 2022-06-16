@@ -9,7 +9,7 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-    value: '${{ toJSON(steps) }} '
+    value: '${{ toJSON(steps) }}'
 runs:
   using: 'composite'
   steps: 
@@ -17,23 +17,6 @@ runs:
       id: docker-compose
       shell: bash
     - name: env echo111
-      run: ls -a .
+      run: echo "hello world ${{steps.docker-compose}}"
       shell: bash
-    - name: env echo222
-      run: |
-        cd ../
-        ls -a .
-      shell: bash
-    # - name: ls echo
-    #   run: ls
-    #   shell: bash
-    - uses: actions/upload-artifact@v3
-      with:
-        name: test-result
-        path: results.txt
-    - name: get the test output 
-      id: testing123
-      shell: bash
-      run: |
-        value=`cat results.txt`
-        echo $value
+    
