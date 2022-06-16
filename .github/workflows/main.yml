@@ -14,12 +14,5 @@ jobs:
         uses: Todd-j-sutherland/e2e-test@testing_new
         with:
           who-to-greet: 'Mona the Octocat'
-      - name: download the results
-        uses: actions/download-artifact@v3
-        with:
-          name: test-result
-      - name: get the test output 
-        shell: bash
-        run: |
-          value=`cat results.txt`
-          echo $value
+      - name: get the results
+        run: echo "results are - ${{steps.hello.outputs.results}}"
