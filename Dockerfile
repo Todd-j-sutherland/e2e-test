@@ -42,8 +42,8 @@
 
 
 FROM node:16.13.1
-WORKDIR /app
-ADD . /app
+# WORKDIR /app
+# ADD . /app
 COPY entrypoint.sh /entrypoint.sh
 # CMD ["/bin/bash"]
 RUN chmod +x /entrypoint.sh
