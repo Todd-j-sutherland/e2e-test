@@ -17,6 +17,6 @@ runs:
       id: docker-compose
       shell: bash
     - name: env echo111
-      run: echo "hello world ${{steps.docker-compose}}"
+      run: echo "hello world ${{toJSON(steps.docker-compose)}}"
       shell: bash
     
