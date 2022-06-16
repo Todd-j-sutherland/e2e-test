@@ -19,15 +19,15 @@ runs:
     - name: env echo111
       run: ls -a .
       shell: bash
-    - name: env echo222
-      run: |
-        cd ../
-        ls -a .
-      shell: bash
+    # - name: env echo222
+    #   run: |
+    #     cd ../
+    #     ls -a .
+    #   shell: bash
     # - name: ls echo
     #   run: ls
     #   shell: bash
     - uses: actions/upload-artifact@v3
       with:
         name: test-result
-        path: results.txt
+        path: e2e-test/results.txt
