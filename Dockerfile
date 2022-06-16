@@ -45,5 +45,5 @@
 FROM node:16.13.1
 
 # CMD ["/bin/bash"]
-
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
