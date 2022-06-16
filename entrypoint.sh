@@ -2,6 +2,6 @@
 ls
 pwd
 npm install
-echo "jeff------------------- $1 -----------------------------"
-echo "::set-output name=resultE2E::$partnerName SUCCESfffS" > "results.txt"
+echo "jeff------------------- -----------------------------"
+echo "::set-output name=resultE2E:: SUCCESfffS" > "results.txt"
 ls
