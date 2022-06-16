@@ -25,7 +25,7 @@ services:
   #     - '4444:4444'
 
   automation:
-    working_dir: /app
+    working_dir: /
     image: automation-test:latest
     container_name: automationtest
     build:
@@ -34,7 +34,7 @@ services:
         - GITLAB_USER=${GITLAB_USER}
       dockerfile: Dockerfile
     shm_size: 2gb
-    command: echo "::set-output name=resultE2E::SUCCESfffS"
+    command: ls
     # depends_on:
     #   - selenium-hub
     #   - chrome
