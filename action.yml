@@ -13,9 +13,10 @@ outputs:
 runs:
   using: 'composite'
   steps: 
-    - run: docker-compose up --exit-code-from automation
+    - run: docker-compose up automation
       id: docker-compose
       shell: bash
+      # working-directory: onboarding-web
     - name: env echo
       run: env
       shell: bash
