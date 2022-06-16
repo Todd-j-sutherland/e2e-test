@@ -34,7 +34,8 @@ services:
         - GITLAB_USER=${GITLAB_USER}
       dockerfile: Dockerfile
     shm_size: 2gb
-    command: ls
+    command: >
+      /bin/bash -c "echo ls"
     # depends_on:
     #   - selenium-hub
     #   - chrome
