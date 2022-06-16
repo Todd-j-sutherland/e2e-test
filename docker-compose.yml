@@ -25,6 +25,7 @@ services:
   #     - '4444:4444'
 
   automation:
+    working_dir: /app
     image: automation-test:latest
     container_name: automationtest
     build:
