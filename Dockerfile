@@ -34,7 +34,6 @@
 
 # FROM ianwalter/puppeteer:latest
 # RUN apt update && apt install default-jdk -y
-# WORKDIR /e2e-test
 # ADD . /e2e-test
 
 # RUN npm install
@@ -43,14 +42,13 @@
 
 
 FROM node:16.13.1
-RUN apt update && apt install default-jre -y && apt install default-jdk -y
-
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \ 
-    && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
-RUN apt-get update && apt-get -y install google-chrome-stable
-
-VOLUME .
-
+WORKDIR /app
+ADD . /app
+COPY entrypoint.sh /entrypoint.sh
 # CMD ["/bin/bash"]
-
-# ENTRYPOINT ["/entrypoint.sh"]
+ARG GITLAB_USER=default_user_name
+ENV GITLAB_USER=${GITLAB_USER}
+RUN echo '${GITLAB_USER}' 
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+# COPY results.txt /results.txt

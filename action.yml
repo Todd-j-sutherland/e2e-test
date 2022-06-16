@@ -9,8 +9,18 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+    value: '${{ toJSON(steps) }}'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+  using: 'composite'
+  steps: 
+    - run: docker-compose up automation
+      id: docker-compose
+      shell: bash
+    - name: env echo111
+      run: echo "hello world--- ${{toJSON(steps)}}"
+      shell: bash
+    - name: env echo111
+      run: echo "hello world--- ${{ toJSON(env) }}"
+      shell: bash
+
+    
