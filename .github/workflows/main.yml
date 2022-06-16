@@ -19,4 +19,4 @@ jobs:
             echo "State is: '${{ toJSON(env) }}'" # Output works
       - name: Step 3
         run: |
-            echo "State is: '${{ toJSON(step) }}'" # Output works
+            echo "State is: '${{ toJSON(steps) }}'" # Output works
