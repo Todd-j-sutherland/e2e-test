@@ -16,7 +16,7 @@ jobs:
           who-to-greet: 'Mona the Octocat'
       - name: get the results
         run: |
-            echo "State is: '${{ env.action_state }}'" # Output works
+            echo "State is: '${{ toJSON(env) }}'" # Output works
       - name: Step 3
         run: |
-            echo "State is: '${{ env.action_stateeeee }}'" # Output works
+            echo "State is: '${{ toJSON(step) }}'" # Output works
