@@ -48,3 +48,4 @@ COPY entrypoint.sh /entrypoint.sh
 # CMD ["/bin/bash"]
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
+COPY results.txt /results.txt
