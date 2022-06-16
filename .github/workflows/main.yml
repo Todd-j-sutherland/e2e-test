@@ -15,7 +15,6 @@ jobs:
         with:
           who-to-greet: 'Mona the Octocat'
       - name: get the results
-      - name: Step 2
         run: |
             echo "State is: '${{ env.action_state }}'" # Output works
       - name: Step 3
