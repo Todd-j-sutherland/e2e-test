@@ -13,7 +13,7 @@ outputs:
 runs:
   using: 'composite'
   steps: 
-    - run: PARTNER=${{ inputs.partner }} ENVIRONMENT=${{ inputs.environments }} docker-compose up --exit-code-from automation
+    - run: docker-compose up --exit-code-from automation
       id: docker-compose
       shell: bash
     - name: env echo
