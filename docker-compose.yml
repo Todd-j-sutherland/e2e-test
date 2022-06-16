@@ -14,7 +14,9 @@ services:
   #     - VNC_NO_PASSWORD=1
   #     - SE_NODE_MAX_SESSIONS=2
 
-  # selenium-hub:
+  selenium-hub:
+    command: >
+      /bin/bash -c "echo ls hhhhhhhhhhhhhhheeeeeeeeeeeeeeeellllllllllllloooooooooooooooo"
   #   image: selenium/hub:4.1.3-20220405
   #   tty: false
   #   stdin_open: false
@@ -36,8 +38,8 @@ services:
     shm_size: 2gb
     command: >
       /bin/bash -c "echo ls"
-    # depends_on:
-    #   - selenium-hub
+    depends_on:
+      - selenium-hub
     #   - chrome
     environment:
       - HOST_NAME=selenium-hub
