@@ -9,8 +9,20 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+    value: ''
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+  using: 'composite'
+  steps: 
+    - run: PARTNER=${{ inputs.partner }} ENVIRONMENT=${{ inputs.environments }} docker-compose up --exit-code-from automation
+      id: docker-compose
+      shell: bash
+    - name: env echo
+      run: env
+      shell: bash
+    - name: ls echo
+      run: ls
+      shell: bash
+    # - uses: actions/upload-artifact@v3
+    #   with:
+    #     name: test-result
+    #     path: results.txt

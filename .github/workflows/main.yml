@@ -14,7 +14,13 @@ jobs:
         uses: Todd-j-sutherland/e2e-test@head/test1
         with:
           who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step test
-      # - uses: actions/checkout@v2
-      - name: Run docker-compose 
-        run: docker-compose up --exit-code-from automation
+      - name: env echo 1
+        run: env
+        shell: bash
+      - name: ls echo 1
+        run: ls
+        shell: bash
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: test-result
+  #     path: results.txt
