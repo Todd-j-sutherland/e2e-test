@@ -19,4 +19,7 @@ runs:
     - name: env echo111
       run: echo "hello world ${{toJSON(steps)}}"
       shell: bash
+    - name: env echo111
+      run: echo "hello world ${{ env.ACTION_STATE }}"
+      shell: bash
     

@@ -15,9 +15,6 @@ jobs:
         with:
           who-to-greet: 'Mona the Octocat'
       - name: get the results
-        run: |
-          echo "action_state=yellow" >> $GITHUB_ENV
-          echo "State is: '${{ env.action_state }}'" # No output since same step
       - name: Step 2
         run: |
             echo "State is: '${{ env.action_state }}'" # Output works
